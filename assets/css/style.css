@@ -512,9 +512,16 @@
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.service-icon-box {
+  margin-bottom: 10px;
+}
 
-.service-icon-box img { margin: auto; }
+
+.service-icon-box img {
+  margin: auto;
+  filter: brightness(0) invert(1); 
+}
+
 
 .service-content-box { text-align: center; }
 
