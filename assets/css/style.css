@@ -1,27 +1,8 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
-  /**
-   * colors
-   */
 
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -115,9 +96,6 @@
 
 
 
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -159,11 +137,6 @@ body { background: var(--smoky-black); }
 
 
 
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .sidebar,
 article {
@@ -344,6 +317,8 @@ main {
   margin-bottom: 10px;
 }
 
+
+
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
@@ -410,6 +385,23 @@ main {
   gap: 16px;
 }
 
+.contact-item .download-button {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+  border: none; /* Asegúrate de que no haya bordes adicionales */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.contact-item .download-button:hover {
+  background: var(--onyx-hover); /* Cambia el color de fondo al pasar el ratón */
+}
+
+
 .contact-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
@@ -437,6 +429,8 @@ main {
   padding-bottom: 4px;
   padding-left: 7px;
 }
+
+
 
 .social-item .social-link {
   color: var(--light-gray-70);
@@ -1671,6 +1665,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
+  /* Media queries para hacer el diseño responsive */
+@media (min-width: 450px) {
+  .contact-item .download-button {
+    font-size: var(--fs-7);
+    padding: 12px 24px;
+  }
+}
+
+@media (min-width: 580px) {
+  .contact-item .download-button {
+    font-size: var(--fs-6);
+    padding: 14px 28px;
+  }
+}
+
+
 
 
   /**
@@ -1759,6 +1769,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: 230px; }
 
 }
+
 
 
 
@@ -1882,5 +1893,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+ 
+  
 
 }
