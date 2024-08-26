@@ -12,7 +12,9 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
-
+function downloadCV() {
+  window.location.href = 'ruta/a/tu/cv.pdf';
+}
 
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");

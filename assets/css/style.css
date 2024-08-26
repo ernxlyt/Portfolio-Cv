@@ -1665,22 +1665,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-  /* Media queries para hacer el diseño responsive */
-@media (min-width: 450px) {
-  .contact-item .download-button {
-    font-size: var(--fs-7);
-    padding: 12px 24px;
-  }
-}
-
-@media (min-width: 580px) {
-  .contact-item .download-button {
-    font-size: var(--fs-6);
-    padding: 14px 28px;
-  }
-}
-
-
 
 
   /**
