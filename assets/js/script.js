@@ -13,7 +13,7 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 function downloadCV() {
-  window.location.href = 'ruta/a/tu/cv.pdf';
+  window.location.href = 'https://drive.google.com/file/d/1BXQBXmtn7cZh6opxD_N82LW-WLNEQUZO/view?usp=sharing';
 }
 
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
